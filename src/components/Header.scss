@@ -1,0 +1,45 @@
+.headerContainer{
+    max-width: 70rem;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 3rem;
+    }
+
+    nav a{
+        width:100%;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 400;
+        border-bottom: 1px solid transparent;
+
+        &:hover{
+            color: var(--button);
+            border-bottom: 1px solid var(--button);
+            cursor: pointer;
+            filter: brightness(1.2);
+            transition: .2s;
+        }
+    }
+    .askCoffee{
+        padding: .5rem 1.5rem;
+        font-size: 1rem;
+        background: transparent;;
+        border: 1px solid var(--button);
+        border-radius: 8px;
+        color: var(--text-color);
+
+        &:hover{
+            color: var(--text-color);
+            background: var(--button);
+            border: 1px solid var(--text-color);
+            transition:.2s;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@use './global';
+
+.container{
+    max-width: 70rem;
+    margin: 0 auto;
+    height:100%;
+    
+        #blurUp{
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: -1000;
+        }
+        #blurDown{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: -1000;
+        }
+    
+}
