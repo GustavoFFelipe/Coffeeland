@@ -5,6 +5,7 @@ import blurDown from './assets/blur-1.png';
 import './global.scss';
 import './App.scss'
 import { Header } from './components/Header';
+import { Main } from './components/Main';
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       </div>
 
       <Header />
-
+      <Main />
 
 
     </div>
