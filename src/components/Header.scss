@@ -1,0 +1,103 @@
+.headerContainer{
+    max-width: 70rem;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img{
+        width: 3rem;
+    }
+
+    nav a{
+        width:100%;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 400;
+        border-bottom: 1px solid transparent;
+
+        &:hover{
+            color: var(--button);
+            border-bottom: 1px solid var(--button);
+            cursor: pointer;
+            filter: brightness(1.2);
+            transition: .2s;
+        }
+    }
+    .askCoffee{
+        padding: .5rem 1.5rem;
+        font-size: 1rem;
+        background: transparent;;
+        border: 1px solid var(--button);
+        border-radius: 8px;
+        color: var(--text-color);
+
+        &:hover{
+            color: var(--text-color);
+            background: var(--button);
+            border: 1px solid var(--text-color);
+            transition:.2s;
+            cursor: pointer;
+        }
+    }
+    .mobileNav, .menuMobileIcon{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .headerContainer{
+        max-width: 50rem;
+        justify-content: space-between;
+
+        nav{
+            display: none;
+        }
+
+        .askCoffee{
+            display: none;
+        }
+        .menuMobileIcon{
+            display: block;
+        }
+/*-----------Mnu Mobile ----------*/
+        #openMenu{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(3px);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+            background: rgb(5,3,9);
+            background: linear-gradient(180deg, rgba(5,3,9,1) 38%, rgba(130,87,229,0.4962359943977591) 83%);
+            overflow-y: hidden;
+
+            .close{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            a{
+                color: #fff;
+                margin: .5rem 0;
+                font-size: 1.2rem;
+                text-decoration: none;
+                font-weight: 600;
+
+                &:hover{
+                    color: var(--button);
+                    transition: .2s;
+                }
+            }
+        }
+
+    }
+}
